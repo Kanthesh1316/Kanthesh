@@ -35,7 +35,7 @@ const Skills: React.FC = () => {
         
         {/* Main Skills Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {skills.map((skill, index) => (
+          {skills.map((skill, ) => (
             <div key={skill.name} className="glass-card p-6 group hover:scale-105 transition-all duration-300 neon-border-hover">
               <div className="text-center mb-4">
                 <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">{skill.icon}</div>
@@ -44,19 +44,7 @@ const Skills: React.FC = () => {
               </div>
               
               <div className="relative">
-                <div className="w-full bg-gray-700/50 rounded-full h-3 mb-2 overflow-hidden">
-                  <div 
-                    className="skill-bar h-3 rounded-full bg-gradient-to-r from-violet-500 via-purple-500 to-cyan-500 transition-all duration-2000 ease-out neon-glow-bar"
-                    style={{ 
-                      width: `${skill.level}%`,
-                      animationDelay: `${index * 0.1}s`
-                    }}
-                  ></div>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-400">Proficiency</span>
-                  <span className="text-sm text-cyan-300 font-semibold">{skill.level}%</span>
-                </div>
+                
               </div>
             </div>
           ))}
@@ -69,20 +57,11 @@ const Skills: React.FC = () => {
             AWS Cloud Services
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-            {cloudSkills.map((service, index) => (
+            {cloudSkills.map((service, ) => (
               <div key={service.name} className="text-center">
                 <div className="glass-card p-4 rounded-lg mb-3 hover:scale-105 transition-all duration-300">
                   <h4 className="text-lg font-semibold text-white mb-2">{service.name}</h4>
-                  <div className="w-full bg-gray-700/50 rounded-full h-2">
-                    <div 
-                      className="h-2 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 neon-glow-bar"
-                      style={{ 
-                        width: `${service.level}%`,
-                        animationDelay: `${index * 0.2}s`
-                      }}
-                    ></div>
-                  </div>
-                  <span className="text-sm text-cyan-300 mt-1 block">{service.level}%</span>
+                 
                 </div>
               </div>
             ))}
