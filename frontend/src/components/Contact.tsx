@@ -61,54 +61,7 @@ const Contact: React.FC = () => {
                 Send me a message
               </h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="relative">
-                  <User className="absolute left-4 top-1/2 transform -translate-y-1/2 text-violet-400 w-5 h-5" />
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full pl-12 pr-4 py-4 bg-gray-800/50 border border-violet-500/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300 neon-input"
-                    required
-                  />
-                </div>
-                
-                <div className="relative">
-                  <AtSign className="absolute left-4 top-1/2 transform -translate-y-1/2 text-violet-400 w-5 h-5" />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full pl-12 pr-4 py-4 bg-gray-800/50 border border-violet-500/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300 neon-input"
-                    required
-                  />
-                </div>
-                
-                <div className="relative">
-                  <MessageCircle className="absolute left-4 top-6 text-violet-400 w-5 h-5" />
-                  <textarea
-                    name="message"
-                    placeholder="Your Message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={6}
-                    className="w-full pl-12 pr-4 py-4 bg-gray-800/50 border border-violet-500/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300 resize-none neon-input"
-                    required
-                  ></textarea>
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-violet-600 to-cyan-600 rounded-lg text-white font-medium hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25 neon-glow group"
-                >
-                  <Send size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
-                  Send Message
-                </button>
-              </form>
+              
             </div>
           </div>
           
